@@ -1,0 +1,4 @@
+letrec hanoi n =
+  if n <= 0 then 0
+  else ((2 * (hanoi (n + -1))) + 1)
+in (hanoi 5)
